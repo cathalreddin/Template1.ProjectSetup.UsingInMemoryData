@@ -11,6 +11,7 @@ namespace Template1.ProjectSetup.UsingInMemoryData.Interfaces
 		IEnumerable<Player> GetPlayers();
 		void AddPlayer(Player player);
 		void DeletePlayer(Player player);
+		void Commit();
 
 	}
 }

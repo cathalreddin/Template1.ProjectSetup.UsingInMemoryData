@@ -31,8 +31,7 @@ namespace Template1.ProjectSetup.UsingInMemoryData.Controllers
 				return View();
 
 			var player = new Player()
-			{
-				Id = 4,
+			{			
 				Name = model.Name
 			};
 
