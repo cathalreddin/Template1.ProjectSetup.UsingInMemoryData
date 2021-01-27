@@ -1,0 +1,29 @@
+﻿@model PlayerViewModel
+
+<div class="row">
+	<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+		<h1 class="page-title txt-color-blueDark">
+			<i class="fa fa-fw fa-wrench"></i>
+			Player
+			<span>
+				>
+				Add
+			</span>
+		</h1>
+	</div>
+</div>
+<form class="horizontal-form" asp-action="create">
+	<fieldset>
+		@await Html.PartialAsync("_FormFields", Model)
+	</fieldset>
+	<footer>
+		<button type="submit" value="Create" class="btn btn-success">
+			<i class="fa fa-check"></i> Create Player
+		</button>
+		<a asp-controller="Players" asp-action="Index" class="btn btn-info">
+			<i class="fa fa-arrow-left"></i> Back to List
+		</a>
+	</footer>
+</form>
+
+
